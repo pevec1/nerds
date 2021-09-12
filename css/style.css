@@ -1,180 +1,263 @@
 html {
-  font-size: 19px;
+  font-size: 16px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   text-align: center;
-  background-color: grey;
+  background-color: ghostwhite;
 }
 
 h2 {
   padding: 0;
   margin: 0;
+  font-size: 2rem;
 }
-h6 {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  color: #d6dbe0;
+h3,
+h4 {
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
-}
-
-form {
-  position: relative;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-
-  text-align: center;
-}
-.container {
-  /* box-sizing: border-box; 
- position: relative;*/
-  max-width: 450px;
-  height: 630px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 25px;
-}
-
-.section {
-  padding: 30px;
-  padding-bottom: 0;
-  margin: 0;
-}
-.forget {
-  display: block;
-  text-align: left;
-  margin: 20px 0 0 0;
-}
-.promo {
-  display: inline-block;
-  margin-left: 0;
-  vertical-align: middle;
-}
-
-input {
-  width: 370px;
-  height: 65px;
-  margin: 20px 0 0 0;
-  padding: 15px;
-  color: #dcdcdc;
-  background: #ffffff;
-  font-size: 19px;
-
-  border: 1px solid #dcdcdc;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-a {
-  color: #005bff;
-}
-.btn {
-  position: relative;
-  box-sizing: border-box;
-  display: block;
-  margin: 15px;
-
-  font-weight: bold;
+  text-transform: uppercase;
   color: black;
-  text-align: center;
-
-  border-radius: 10px;
-  padding: 20px;
-  transition: all 0.25s;
 }
 
-.btn-login {
-  width: 370px;
-  height: 65px;
-  margin: 20px 0 0 0;
-  background-color: #ffdc60;
-  border-color: #ffdc60;
-}
-.btn-register {
-  width: 370px;
-  height: 65px;
-  margin: 20px 0 0 0;
-  background-color: white;
-  border: 1px solid #dcdcdc;
-}
+.container {
+  box-sizing: border-box;
+  position: relative;
 
-.text {
-  color: #8b8b8b;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.buttons {
+.logo {
+  display: inline-block;
 }
-.btns {
+.menu {
+  width: 500px;
+  display: inline-block;
+}
+ul.menu-list li {
+  display: inline-block;
+  margin-left: 30px;
+  list-style-type: none;
+  font-size: 16px;
+}
+.link {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
-
-  font-size: 15px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-
-  background-color: #ffffff;
-  border-radius: 10px;
-
-  transition: all 0.25s;
+  margin-left: 285px;
 }
 
-.btns::before {
+.link::before {
   position: absolute;
-
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   content: "";
 
   background-repeat: no-repeat;
   background-position: center;
 }
-.btn-vk {
-  position: absolute;
-  left: 20px;
+.icon-cart {
+  position: relative;
 }
-.btn-fb {
+
+.icon-cart::before {
   position: absolute;
+  right: 90px;
+  background-image: url(../img/cart.svg);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.btns {
+  background-image: url(../img/buttons.png);
+  height: 15px;
+  width: 15px;
+  color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.btn-active {
+  background-image: url(../img/active.png);
+}
+.btn-danger {
+  background-color: #fb5559;
+}
+.btn-success {
+  background-color: #00c973;
+}
+.btn-warning {
+  background-color: #efc749;
+}
+.slider-item {
+  position: relative;
+  display: none;
+}
+.item-active {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 400px;
+  text-align: left;
+}
+.slider-content {
+  position: absolute;
+  display: block;
+  top: 50px;
   left: 100px;
+  width: 300px;
+  height: 400px;
 }
-.btn-google {
+.slider-buttons {
   position: absolute;
-  left: 160px;
+  display: block;
+  top: 200px;
+  left: 400px;
+  width: 100px;
+  height: 50px;
 }
-.btn-qr {
+.slide-one {
   position: absolute;
-  left: 210px;
+  display: block;
+  background: url(../img/nerds-index-slide1.png);
+  background-size: contain;
+  left: 500px;
+  width: 600px;
+  height: 350px;
 }
-.btn-more {
+
+.services-item {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding: 20px 90px;
+}
+.services-item img {
+  width: 200px;
+  height: 100px;
+}
+.services-item p {
+  width: 200px;
+  margin: 15px 0;
+}
+
+.about-us {
+  width: 100%;
+}
+
+.about-us-more {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 50%;
+}
+ul.us {
+  list-style-image: url(../img/line.png);
+}
+li::marker {
+  vertical-align: middle;
+}
+.about-us-stats {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 35%;
+}
+
+table {
+  display: inline;
+}
+tr.text-percent {
+  font-size: 2.2rem;
+}
+tr.text-stats {
+  font-size: 0.7rem;
+}
+
+.clients {
+  display: inline;
+  opacity: 0.3;
+}
+
+.map {
+  width: 1200px;
+  height: 345px;
+  background-image: url(../img/map-marker.png);
+  background-size: 1200px 345px;
+}
+.address {
   position: absolute;
-  left: 370px;
+  left: 70px;
+  top: 65px;
+  width: 250px;
+  height: 250px;
+  border: none;
+  background-color: white;
+  background-size: 250px 250px;
 }
-.btn-vk::before {
-  padding-right: 40px;
-  background-image: url(../img/icons/icon-vk.svg);
+
+ul.social li {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  list-style-type: none;
+  font-size: 16px;
+  width: 70px;
+  height: 70px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
 }
-.btn-fb::before {
-  background-image: url(../img/icons/icon-fb.svg);
+.icon-vk::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+
+  background-image: url(../img/vk-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.btn-google::before {
-  background-image: url(../img/icons/icon-google.svg);
+
+.icon-fb::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+
+  background-image: url(../img/fb-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.btn-qr::before {
-  margin: 0 0 0 20px;
-  padding: 0 40px;
-  background-image: url(../img/icons/icon-qr.svg);
+
+.icon-insta::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+
+  background-image: url(../img/insta-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.btn-more::before {
-  background-image: url(../img/icons/more.svg);
+
+.motto {
+  display: inline-block;
+  margin-left: 150px;
+}
+.nav-social {
+  display: inline-block;
 }
