@@ -1,0 +1,180 @@
+html {
+  font-size: 19px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: grey;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+h6 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #d6dbe0;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  position: relative;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  text-align: center;
+}
+.container {
+  /* box-sizing: border-box; 
+ position: relative;*/
+  max-width: 450px;
+  height: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.section {
+  padding: 30px;
+  padding-bottom: 0;
+  margin: 0;
+}
+.forget {
+  display: block;
+  text-align: left;
+  margin: 20px 0 0 0;
+}
+.promo {
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+input {
+  width: 370px;
+  height: 65px;
+  margin: 20px 0 0 0;
+  padding: 15px;
+  color: #dcdcdc;
+  background: #ffffff;
+  font-size: 19px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+a {
+  color: #005bff;
+}
+.btn {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  margin: 15px;
+
+  font-weight: bold;
+  color: black;
+  text-align: center;
+
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.25s;
+}
+
+.btn-login {
+  width: 370px;
+  height: 65px;
+  margin: 20px 0 0 0;
+  background-color: #ffdc60;
+  border-color: #ffdc60;
+}
+.btn-register {
+  width: 370px;
+  height: 65px;
+  margin: 20px 0 0 0;
+  background-color: white;
+  border: 1px solid #dcdcdc;
+}
+
+.text {
+  color: #8b8b8b;
+}
+
+.buttons {
+}
+.btns {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  transition: all 0.25s;
+}
+
+.btns::before {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+  content: "";
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-vk {
+  position: absolute;
+  left: 20px;
+}
+.btn-fb {
+  position: absolute;
+  left: 100px;
+}
+.btn-google {
+  position: absolute;
+  left: 160px;
+}
+.btn-qr {
+  position: absolute;
+  left: 210px;
+}
+.btn-more {
+  position: absolute;
+  left: 370px;
+}
+.btn-vk::before {
+  padding-right: 40px;
+  background-image: url(../img/icons/icon-vk.svg);
+}
+.btn-fb::before {
+  background-image: url(../img/icons/icon-fb.svg);
+}
+.btn-google::before {
+  background-image: url(../img/icons/icon-google.svg);
+}
+.btn-qr::before {
+  margin: 0 0 0 20px;
+  padding: 0 40px;
+  background-image: url(../img/icons/icon-qr.svg);
+}
+.btn-more::before {
+  background-image: url(../img/icons/more.svg);
+}
