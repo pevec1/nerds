@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50">
+	<title>slider 1</title>
+	<defs>
+		<image  width="240" height="50" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAAyBAMAAACQW0seAAAAAXNSR0IB2cksfwAAAA9QTFRF+1Za+1Za+1Za+1Za+1ZajCgCZQAAAAV0Uk5TH3//j/5LAdlaAAAAS0lEQVR4nO3YMREAIQwAwWDhHZB5AWhg8K8JBxRQpNkzsP1Fy5JGfDVwjxo3EwwGg8FgMBgMBoPBYDAYDAaDwSe4bBu3ddd8cv+xAaq7JDYXtDFhAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="slider 1">
+		<use id="btn" href="#img1" x="0" y="0" />
+	</g>
+</svg>

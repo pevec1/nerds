@@ -1,18 +1,6 @@
-/*************************
-  *** Общие стили ***
-**************************/
-* {
-	box-sizing: border-box;
-}
-
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
-
-.btn {
-	width: 240px;
-}
-
 
 body {
   font-family: Roboto, sans-serif;
@@ -29,10 +17,10 @@ h4 {
   text-transform: uppercase;
 }
 
-header a {
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #000000;
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 }
 
 
@@ -55,37 +43,40 @@ header, .slider{
 }
 .menu {
 }
-
-button {
-	border: none;
+ul.menu-list li {
+  display: inline-block;
+  margin-left: 30px;
+  list-style-type: none;
+  font-size: 16px;
 }
 .link {
 }
 
-.logo {
-	transition: all 0.2s;
+.link::before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  content: "";
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-cart {
+  position: relative;
 }
 
-.logo:hover {
-	opacity: 0.8;
+.icon-cart::before {
+  position: absolute;
+  right: 90px;
+  background-image: url(../img/cart.svg);
 }
 
-.logo:active {
-	opacity: 0.3;
-}
-
-.title {
-	font-size: 24px;
-	line-height: 125%;
-	font-weight: bold;
-}
-
-/* Кнопки (начало) */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 40px;
   margin-bottom: 20px;
   color: white;
+  border: 0;
 }
 .btns {
   background-image: url(../img/buttons.png);
@@ -95,42 +86,19 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
   border: 0;
+  border-radius: 50%;
 }
 .btns-active {
   background-image: url(../img/active.png);
 }
-
-.btn:active {
-	color: rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
-}
-
 .btn-danger {
-	background-color: #fb565a;
+  background-color: #fb5559;
 }
-
-.btn-danger:hover {
-	background-color: #e74246;
-}
-
-.btn-danger:active {
-	background-color: #d7373b;
-}
-
 .btn-success {
-	background-color: #00ca74;
+  background-color: #00c973;
 }
-
-.btn-success:hover {
-	background-color: #00bc6c;
-}
-
-.btn-success:active {
-	background-color: #00aa62;
-}
-
 .btn-warning {
-	background-color: #efc849;
+  background-color: #efc749;
 }
 .slider-item {
   display: none;
@@ -161,68 +129,52 @@ button {
   height: 415px;
 }
 
-.menu {
-	margin-left: 202px;
-	margin-right: 250px;
-}
-
-.menu-list {
-	display: flex;
-	justify-content: space-between;
-	width: 438px;
+.services-item {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding: 20px 90px;
 }
 .services-item img {
   width: 300px;
   height: 145px;
 }
-
-.icon-cart {
-	position: relative;
+.services-item p {
+  width: 200px;
+  margin: 15px 0;
 }
 
 .about-us {
 
 }
 
-/* Секция HEADER (конец) */
-
-
-/* Секция SLIDER (начало) */
-.slider {
-	background-color: #eeeeee;
+.about-us-more {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 50%;
+}
+ul.us {
+  list-style-image: url(../img/line.png);
+}
+li::marker {
+  vertical-align: middle;
+}
+.about-us-stats {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 35%;
 }
 
-.slider-item {
-	display: none;
-	width: 100%;
-	height: 413px;
-
-	background-repeat: no-repeat;
-	background-position: 431px 0;
+table {
+  display: inline;
 }
-
-.slider .item-one {
-	background-image: url('../img/slide-1.png');
+tr.text-percent {
+  font-size: 2.2rem;
 }
-
-.slider .item-two {
-	background-image: url('../img/slide-2.png');
-}
-
-.slider .item-three {
-	background-image: url('../img/slide-3.png');
-}
-
-.slider .item-active {
-	display: flex;
-}
-
-.slider-content {
-	display: flex;
-	flex-direction: column;
-
-	width: 385px;
-	height: 268px;
+tr.text-stats {
+  font-size: 0.7rem;
 }
 
 .clients {
@@ -236,111 +188,68 @@ button {
   background-image: url(../img/map-marker.png);
   background-size: 1440px 415px;
 }
-
-.slider-content .btn {
-	width: 240px;
+.address {
+  position: absolute;
+  left: 70px;
+  top: 65px;
+  width: 250px;
+  height: 250px;
+  border: none;
+  background-color: white;
+  background-size: 250px 250px;
 }
 
-.slider-buttons {
-	position: absolute;
-	top: 300px;
-	left: 555px;
-	display: flex;
-	justify-content: space-between;
-	width: 90px;
+ul.social li {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  list-style-type: none;
+  font-size: 16px;
+  width: 70px;
+  height: 70px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+.icon-vk::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+
+  background-image: url(../img/vk-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slider-buttons .btn {
-	position: relative;
-	padding: 0;
-	width: 18px;
-	height: 18px;
-	border-radius: 100%;
-	background-color: #ffffff;
+.icon-fb::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+
+  background-image: url(../img/fb-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slider-buttons .btn-active::before {
-	position: absolute;
-	top: 5px;
-	left: 5px;
+.icon-insta::before {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
 
-	content: "";
-
-	width: 4px;
-	height: 4px;
-	border: 2px solid #c1c1c1;
-	border-radius: 100%;
-	background-color: transparent;
+  background-image: url(../img/insta-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slider-buttons .btn:hover {
-	background-color: #b1b1b1;
+.motto {
+  display: inline-block;
+  margin-left: 150px;
 }
-
-.slider-buttons .btn:active {
-	background-color: #cccccc;
+.nav-social {
+  display: inline-block;
 }
-
-/* Секция SLIDER (конец) */
-
-
-/* Секция SERVICES (начало) */
-.services .container {
-	justify-content: space-between;
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-.services-item {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-
-	width: 300px;
-	min-height: 345px;
-}
-
-.services-item .title {
-	margin-top: 26px;
-	margin-bottom: 26px;
-	text-transform: uppercase;
-}
-
-.services-item .text {
-	margin-bottom: 35px;
-}
-
-/* Секция SERVICES (конец) */
-
-/* Секция ABOUT-US (начало) */
-.about-us .wrapper {
-	display: flex;
-	width: 1160px;
-
-	border-top: 2px solid #eeeeee;
-	border-bottom: 2px solid #eeeeee;
-}
-
-/* Секция ABOUT-US (конец) */
-
-/* Секция CLIENTS (начало) */
-
-
-
-
-/* Секция CLIENTS (конец) */
-
-
-/* Секция CONTACTS (начало) */
-
-
-
-
-/* Секция CONTACTS (конец) */
-
-
-/* Секция FOOTER (начало) */
-
-
-
-/* Секция FOOTER (конец) */
