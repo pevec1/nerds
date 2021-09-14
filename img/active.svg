@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8">
+	<title>slider indicator</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #c1c1c1;stroke-width: 2 } 
+	</style>
+	<g id="slider indicator">
+		<path id="active" class="shp0" d="M4 -0.06C6.25 -0.06 8.08 1.76 8.08 4.02C8.08 6.27 6.25 8.09 4 8.09C1.75 8.09 -0.08 6.27 -0.08 4.02C-0.08 1.76 1.75 -0.06 4 -0.06Z" />
+	</g>
+</svg>

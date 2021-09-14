@@ -5,13 +5,16 @@ html {
 body {
   font-family: Roboto, sans-serif;
   text-align: center;
-  background-color: ghostwhite;
 }
 
-h2 {
+h1 {
   padding: 0;
   margin: 0;
-  font-size: 2rem;
+  font-size: 55px;
+}
+h2 {
+	font-size: 40px;
+    font-weight: 500;
 }
 h3,
 h4 {
@@ -24,20 +27,34 @@ a {
   color: black;
 }
 
+
 .container {
   box-sizing: border-box;
   position: relative;
-
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content:space-around;
+	align-items: center;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+header, .slider{
+	  background-color: #eeeeee;
+}
 .logo {
-  display: inline-block;
+	width: 160px;
+	height: 65px;
+	background-image: url(../img/nerds-logo.png);
+}
+.logo:hover {
+	background-image: url(../img/nerds-logo2.png);
+}
+.logo:active {
+	background-image: url(../img/nerds-logo3.png);
 }
 .menu {
-  width: 500px;
-  display: inline-block;
 }
 ul.menu-list li {
   display: inline-block;
@@ -46,10 +63,6 @@ ul.menu-list li {
   font-size: 16px;
 }
 .link {
-  position: relative;
-  box-sizing: border-box;
-  display: inline-block;
-  margin-left: 285px;
 }
 
 .link::before {
@@ -73,9 +86,10 @@ ul.menu-list li {
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 40px;
   margin-bottom: 20px;
   color: white;
+  border: 0;
 }
 .btns {
   background-image: url(../img/buttons.png);
@@ -84,9 +98,11 @@ ul.menu-list li {
   color: white;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 15px;
   border: 0;
+  border-radius: 50%;
 }
-.btn-active {
+.btns-active {
   background-image: url(../img/active.png);
 }
 .btn-danger {
@@ -99,61 +115,51 @@ ul.menu-list li {
   background-color: #efc749;
 }
 .slider-item {
-  position: relative;
   display: none;
 }
 .item-active {
   position: relative;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  height: 400px;
   text-align: left;
+  align-items: center;
 }
 .slider-content {
-  position: absolute;
-  display: block;
-  top: 50px;
-  left: 100px;
-  width: 300px;
-  height: 400px;
+	width: 380px;
 }
 .slider-buttons {
   position: absolute;
-  display: block;
-  top: 200px;
-  left: 400px;
-  width: 100px;
+  display: inline-block;
+  top: 290px;
+  left: 550px;
+ 
+  width: 110px;
   height: 50px;
 }
 .slide-one {
-  position: absolute;
-  display: block;
   background: url(../img/nerds-index-slide1.png);
   background-size: contain;
-  left: 500px;
-  width: 600px;
-  height: 350px;
+  width: 700px;
+  height: 415px;
 }
 
 .services-item {
-  position: relative;
-  display: inline-block;
   text-align: left;
-  padding: 20px 90px;
+  padding-top: 90px;
+
 }
 .services-item img {
-  width: 200px;
-  height: 100px;
+  
+  height: 145px;
 }
 .services-item p {
-  width: 200px;
+  width: 280px;
   margin: 15px 0;
 }
 
 .about-us {
-  width: 100%;
+
 }
 
 .about-us-more {
@@ -186,15 +192,16 @@ tr.text-stats {
 }
 
 .clients {
-  display: inline;
+  display: flex;
   opacity: 0.3;
 }
 
 .map {
-  width: 1200px;
-  height: 345px;
+  width: 1440px;
+  height: 415px;
+  margin: auto;
   background-image: url(../img/map-marker.png);
-  background-size: 1200px 345px;
+  background-size: 1440px 415px;
 }
 .address {
   position: absolute;
@@ -255,9 +262,6 @@ ul.social li {
 }
 
 .motto {
-  display: inline-block;
-  margin-left: 150px;
 }
 .nav-social {
-  display: inline-block;
-}
+ }
