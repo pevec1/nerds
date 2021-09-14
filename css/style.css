@@ -5,28 +5,31 @@
 html {
   font-size: 16px;
 }
-.ttf{
+.ttf1{
 	font-family: 'Mon Amour Two Medium', arial;
 }
-.title {
+.title1 {
 	font-family: 'Noto Serif', serif;
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Noto Serif', serif;
   text-align: center;
 }
 
 h1 {
+	font-family: Roboto, sans-serif;
   padding: 0;
   margin: 0;
   font-size: 55px;
 }
 h2 {
+	font-family: Roboto, sans-serif;
 	font-size: 40px;
     font-weight: 500;
 }
 h3,
 h4 {
+	font-family: Roboto, sans-serif;
   text-transform: uppercase;
 }
 
@@ -53,6 +56,7 @@ header, .slider{
 	  background-color: #eeeeee;
 }
 .logo {
+	font-family: Roboto, sans-serif;
 	width: 160px;
 	height: 65px;
 	background-image: url(../img/nerds-logo.png);
@@ -64,14 +68,17 @@ header, .slider{
 	background-image: url(../img/nerds-logo3.png);
 }
 .menu {
+font-family: Roboto, sans-serif;
 }
 ul.menu-list li {
   display: inline-block;
   margin-left: 30px;
   list-style-type: none;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
 }
 .link {
+font-family: Roboto, sans-serif;
 }
 
 .link::before {
@@ -95,6 +102,7 @@ ul.menu-list li {
 
 .btn {
   display: inline-block;
+  font-family: Roboto, sans-serif;
   padding: 15px 40px;
   margin-bottom: 20px;
   color: white;
