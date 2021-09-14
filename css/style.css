@@ -12,7 +12,11 @@ h1 {
   margin: 0;
   font-size: 55px;
 }
-h2, h3,
+h2 {
+	font-size: 40px;
+    font-weight: 500;
+}
+h3,
 h4 {
   text-transform: uppercase;
 }
@@ -32,7 +36,7 @@ a {
   flex-direction: row;
   justify-content:space-around;
 	align-items: center;
-  min-width: 1440px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,6 +44,15 @@ header, .slider{
 	  background-color: #eeeeee;
 }
 .logo {
+	width: 160px;
+	height: 65px;
+	background-image: url(../img/nerds-logo.png);
+}
+.logo:hover {
+	background-image: url(../img/nerds-logo2.png);
+}
+.logo:active {
+	background-image: url(../img/nerds-logo3.png);
 }
 .menu {
 }
@@ -85,6 +98,7 @@ ul.menu-list li {
   color: white;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 15px;
   border: 0;
   border-radius: 50%;
 }
@@ -116,10 +130,11 @@ ul.menu-list li {
 }
 .slider-buttons {
   position: absolute;
-  display: block;
-  top: 300px;
-  left: 700px;
-  width: 100px;
+  display: inline-block;
+  top: 290px;
+  left: 550px;
+ 
+  width: 110px;
   height: 50px;
 }
 .slide-one {
@@ -130,17 +145,16 @@ ul.menu-list li {
 }
 
 .services-item {
-  position: relative;
-  display: inline-block;
   text-align: left;
-  padding: 20px 90px;
+  padding-top: 90px;
+
 }
 .services-item img {
-  width: 300px;
+  
   height: 145px;
 }
 .services-item p {
-  width: 200px;
+  width: 280px;
   margin: 15px 0;
 }
 
@@ -185,6 +199,7 @@ tr.text-stats {
 .map {
   width: 1440px;
   height: 415px;
+  margin: auto;
   background-image: url(../img/map-marker.png);
   background-size: 1440px 415px;
 }
@@ -247,9 +262,6 @@ ul.social li {
 }
 
 .motto {
-  display: inline-block;
-  margin-left: 150px;
 }
 .nav-social {
-  display: inline-block;
-}
+ }
